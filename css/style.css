@@ -140,4 +140,22 @@ footer {
     height: 10vh;
     background-color: gray;
     position: sticky;
+    padding: 1rem;
+}
+
+footer > div.flex {
+    height: 100%;
+}
+
+.footer-left,
+.footer-right {
+    width: 30%;
+}
+
+.footer-left img {
+    width: 40px;
+}
+
+footer i {
+    padding: 0 0.5rem;
 }
