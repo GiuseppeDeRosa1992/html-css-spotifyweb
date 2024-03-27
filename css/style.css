@@ -14,12 +14,12 @@ body {
 .debug,
 .debug main,
 .debug nav,
-.debug nav > div,
+.debug nav div,
 .debug .content,
 .debug .bg-blue,
 .debug .content-bottom,
 .debug footer {
-    border: 2px dashed black;
+    border: 2px dashed yellowgreen;
 }
 
 .flex {
@@ -34,19 +34,26 @@ body {
     justify-content: space-between;
 }
 
+.ai-center {
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
 /********************* CSS HEADER ***************/
 
 /********************** CSS MAIN ******************/
 
 
 main nav {
-    width: 15%;
     height: calc(100vh - 8vh);
     background-color: black;
 }
 
 main .content {
-    width: calc(100% - 15%);
+    width: 100%;
 }
 
 main .bg-blue {
@@ -57,6 +64,16 @@ main .bg-blue {
 main .content-bottom {
     height: calc(100% - 8vh);
     background-color: brown;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav i,
+nav img {
+    padding: 0.5rem;
 }
 
 /********************* CSS FOOTER *******************/
