@@ -14,28 +14,28 @@
     <!-- Nav Bar sulla sinistra e contenuto della pagina sulla destra diviso in content top e bottom il tutto gestito con flex -->
     <main class="flex">
         <section>
-            <nav class="flex f-column jc-between ai-center">
+            <nav class="flex f-column jc-between">
                 <div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
                             <img src="./img/logo-small.svg" alt="">
                         </a>
                     </div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
-                            <i class="fa-solid fa-house"></i>
+                            <img src="./img/home.svg" alt="">
                             <span class="d-none">Home</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <img src="./img/search.svg" alt="">
                             <span class="d-none">Cerca</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
-                            <i class="fa-sharp fa-solid fa-lines-leaning"></i>
+                            <img src="./img/libreria.svg" alt="">
                             <span class="d-none">La tua Libreria</span>
                         </a>
                     </div>
@@ -54,15 +54,15 @@
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
-                            <i class="fa-regular fa-circle-down"></i>
+                            <img src="./img/download.svg" alt="">
                             <span class="d-none">Installa app</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="ta-center">
                         <a href="#">
-                            <i class="fa-solid fa-user" style="color: #737373;"></i>
+                            <img src="./img/profile.svg" alt="">
                             <span class="d-none">Giuseppe De Rosa</span>
                         </a>
                     </div>
@@ -74,7 +74,91 @@
             <div class="content-top bg-blue ta-right">
                 <a href="#">EFFETTUA L'UPGRADE</a>
             </div>
-            <div class="content-bottom">2</div>
+            <div class="content-bottom">
+                <div class="link flex jc-center f-wrap ta-center">
+                    <p>IN EVIDENZA</p>
+                    <p>PODCAST</p>
+                    <p>CLASSIFICHE</p>
+                    <p>GENERI E MOOD</p>
+                    <p>NUOVE USCITE</p>
+                    <p>SCOPRI</p>
+                </div>
+                <h2>Recently Played</h2>
+                <!-- prima riga di Card -->
+                <div class="flex f-wrap jc-between gap">
+                    <div class="card">
+                        <figure>
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </figure>
+                        <h3 class="ta-center">Heavy Metal</h3>
+                        <p class="ta-center">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./img/stranger.jpeg" alt="">
+                        </figure>
+                        <h3 class="ta-center">Stramger Things, Vol. 1 (a Netflix original Series Soundtrack)</h3>
+                        <p class="ta-center">Kyle Dixon & Michael Stein</p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./img/aquietplace.jpeg" alt="">
+                        </figure>
+                        <h3 class="ta-center">A quiete place</h3>
+                        <p class="ta-center">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./img/split.jpeg" alt="">
+                        </figure>
+                        <h3 class="ta-center">Split</h3>
+                        <p class="ta-center">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./img/sinister.jpeg" alt="">
+                        </figure>
+                        <h3 class="ta-center">A cure for wellnes</h3>
+                        <p class="ta-center">Subtitle</p>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./img/cure.jpeg" alt="">
+                        </figure>
+                        <h3 class="ta-center">Sinister</h3>
+                        <p class="ta-center">Subtitle</p>
+                    </div>
+                </div>
+                <!-- Seconda riga di card di suggerimenti -->
+                <h2>Creato per Giuseppe De Rosa</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                <!-- div con flex perchè tag figure prende tutto lo spazio -->
+                <div class="created flex gap">
+                    <div>
+                        <figure>
+                            <img src="./img/radar.jpeg" alt="">
+                            <h3 class="ta-center">Release Radar</h3>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <h3 class="ta-center">Daily Mix 1</h3>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Terza riga di card artisti popolari -->
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                <div class="artist flex">
+                    <figure>
+                        <img src="./img/youg.jpeg" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./img/einaudi.jpeg" alt="">
+                    </figure>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer della pagina con un altezza in vh e delle icone dentro -->

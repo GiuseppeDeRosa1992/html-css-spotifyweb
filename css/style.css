@@ -22,6 +22,12 @@ body {
     border: 2px dashed yellowgreen;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .flex {
     display: flex;
 }
@@ -34,8 +40,20 @@ body {
     justify-content: space-between;
 }
 
+.jc-center {
+    justify-content: center;
+}
+
+.gap {
+    gap: 0.5rem;
+}
+
 .ai-center {
     align-items: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
 }
 
 .d-none {
@@ -44,6 +62,10 @@ body {
 
 .ta-right {
     text-align: right;
+}
+
+.ta-center {
+    text-align: center;
 }
 
 a {
@@ -60,23 +82,25 @@ main nav {
     background-color: black;
 }
 
-main .content {
-    width: 100%;
+nav img {
+    width: 50%;
+    text-align: center;
 }
 
-main .bg-blue {
+main .content {
+    height: calc(100vh - 10vh);
+}
+
+main .content-top {
     height: 10vh;
     background-color: #080B12;
 }
 
 main .content-bottom {
-    height: calc(100% - 10vh);
-    background-color: brown;
-}
-
-nav i,
-nav img {
-    padding: 0.5rem;
+    background-color: #141922;
+    padding: 1rem;
+    height: 80vh;
+    overflow: auto;
 }
 
 .content-top a {
@@ -88,8 +112,32 @@ nav img {
     margin-right: 0.5rem;
 }
 
+.content-bottom .link p {
+    padding-bottom: 1rem;
+    width: calc(100% / 4);
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.content-bottom .card {
+    width: calc(100% / 2 - 0.5rem);
+    padding: 0.5rem 0;
+}
+
+.content-bottom .created {
+    padding: 1rem 0;
+}
+
+.content-bottom .artist {
+    padding: 1rem 0;
+}
+
+.content-bottom .artist img {
+    border-radius: 50%;
+}
 /********************* CSS FOOTER *******************/
 footer {
     height: 10vh;
     background-color: gray;
+    position: sticky;
 }
