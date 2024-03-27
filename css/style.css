@@ -42,13 +42,21 @@ body {
     display: none;
 }
 
+.ta-right {
+    text-align: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
 /********************* CSS HEADER ***************/
 
 /********************** CSS MAIN ******************/
 
 
 main nav {
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 10vh);
     background-color: black;
 }
 
@@ -57,18 +65,13 @@ main .content {
 }
 
 main .bg-blue {
-    height: 8vh;
-    background-color: blue;
+    height: 10vh;
+    background-color: #080B12;
 }
 
 main .content-bottom {
-    height: calc(100% - 8vh);
+    height: calc(100% - 10vh);
     background-color: brown;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
 }
 
 nav i,
@@ -76,8 +79,17 @@ nav img {
     padding: 0.5rem;
 }
 
+.content-top a {
+    padding: 0.5rem 1.5rem;
+    background-color: #080B12;
+    border: 1px solid white;
+    border-radius: 20px;
+    line-height: 10vh;
+    margin-right: 0.5rem;
+}
+
 /********************* CSS FOOTER *******************/
 footer {
-    height: 8vh;
+    height: 10vh;
     background-color: gray;
 }

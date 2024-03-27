@@ -13,64 +13,69 @@
 
     <!-- Nav Bar sulla sinistra e contenuto della pagina sulla destra diviso in content top e bottom il tutto gestito con flex -->
     <main class="flex">
-        <nav class="flex f-column jc-between ai-center">
-            <div>
+        <section>
+            <nav class="flex f-column jc-between ai-center">
                 <div>
-                    <a href="#">
-                        <img src="./img/logo-small.svg" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="d-none">Home</span>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span class="d-none">Cerca</span>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <i class="fa-sharp fa-solid fa-lines-leaning"></i>
-                        <span class="d-none">La tua Libreria</span>
-                    </a>
-                </div>
-                <div class="playlist d-none">
-                    <h4>Playlist</h4>
                     <div>
-                        <i class="fa-regular fa-square-plus"></i>
-                        <span class="d-none">Crea Playlist</span>
+                        <a href="#">
+                            <img src="./img/logo-small.svg" alt="">
+                        </a>
                     </div>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none">Home</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="d-none">Cerca</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-sharp fa-solid fa-lines-leaning"></i>
+                            <span class="d-none">La tua Libreria</span>
+                        </a>
+                    </div>
+                    <div class="playlist d-none">
+                        <h4>Playlist</h4>
+                        <div>
+                            <i class="fa-regular fa-square-plus"></i>
+                            <span class="d-none">Crea Playlist</span>
+                        </div>
+                        <p>Nome Playlist</p>
+                        <p>Nome Playlist</p>
+                        <p>Nome Playlist</p>
+                        <p>Nome Playlist</p>
+                        <p>Nome Playlist</p>
+                        <p>Nome Playlist</p>
+                    </div>
                 </div>
-            </div>
-            <div>
                 <div>
-                    <a href="#">
-                        <i class="fa-regular fa-circle-down"></i>
-                        <span class="d-none">Installa app</span>
-                    </a>
+                    <div>
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span class="d-none">Installa app</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fa-solid fa-user" style="color: #737373;"></i>
+                            <span class="d-none">Giuseppe De Rosa</span>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="#">
-                        <i class="fa-solid fa-user" style="color: #737373;"></i>
-                        <span class="d-none">Giuseppe De Rosa</span>
-                    </a>
-                </div>
+            </nav>
+        </section>
+        <!-- Sezione Content con dentro content-top dove troviamo un button e content bottom dove ci sono tutte le card -->
+        <section class="content">
+            <div class="content-top bg-blue ta-right">
+                <a href="#">EFFETTUA L'UPGRADE</a>
             </div>
-        </nav>
-        <div class="content">
-            <div class="bg-blue">1</div>
             <div class="content-bottom">2</div>
-        </div>
+        </section>
     </main>
     <!-- Footer della pagina con un altezza in vh e delle icone dentro -->
     <footer>
