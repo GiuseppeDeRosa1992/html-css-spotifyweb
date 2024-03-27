@@ -7,4 +7,60 @@
 
 body {
     font-family: sans-serif;
+    color: white;
+}
+
+/******************* CSS UTILI *****************/
+.debug,
+.debug main,
+.debug nav,
+.debug nav > div,
+.debug .content,
+.debug .bg-blue,
+.debug .content-bottom,
+.debug footer {
+    border: 2px dashed black;
+}
+
+.flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+/********************* CSS HEADER ***************/
+
+/********************** CSS MAIN ******************/
+
+
+main nav {
+    width: 15%;
+    height: calc(100vh - 8vh);
+    background-color: black;
+}
+
+main .content {
+    width: calc(100% - 15%);
+}
+
+main .bg-blue {
+    height: 8vh;
+    background-color: blue;
+}
+
+main .content-bottom {
+    height: calc(100% - 8vh);
+    background-color: brown;
+}
+
+/********************* CSS FOOTER *******************/
+footer {
+    height: 8vh;
+    background-color: gray;
 }
