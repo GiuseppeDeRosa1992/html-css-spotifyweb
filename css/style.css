@@ -76,6 +76,10 @@ nav img {
     text-align: center;
 }
 
+nav .hover:hover {
+    border-left: 1px solid yellowgreen;
+}
+
 main .content {
     height: calc(100vh - 10vh);
 }
@@ -110,6 +114,7 @@ main .content-bottom {
 
 .content-bottom .link p:hover {
     border-bottom: 2px solid yellowgreen;
+    color: white;
 }
 
 .content-bottom > div.jc-between {
@@ -187,10 +192,6 @@ footer .footer-center .footer-center-top {
 
 /**************** CSS RESPONSIVE S(639x1095) ***************/
 @media all and (min-width: 639px) {
-    section.nav-bar {
-        width: 200%;
-    }
-
     .d-none {
         display: inline-block;
     }
@@ -205,10 +206,6 @@ footer .footer-center .footer-center-top {
 
     nav {
         padding: 0.5rem 1rem;
-    }
-
-    nav .hover:hover {
-        border-left: 1px solid yellowgreen;
     }
 
     nav #logo {
@@ -252,10 +249,6 @@ footer .footer-center .footer-center-top {
 /**************** CSS RESPONSIVE md(878x1095) ***************/
 
 @media all and (min-width: 878px) {
-    section.nav-bar {
-        width: 85%;
-    }
-
     nav img {
         width: 15%;
     }
@@ -288,11 +281,7 @@ footer .footer-center .footer-center-top {
 
 /**************** CSS RESPONSIVE lg(1440x1100) ***************/
 
-@media all and (min-width: 1440px) and (min-height: 1100px) {
-    section.nav-bar {
-        width: 25%;
-    }
-
+@media all and (min-width: 1440px) {
     .content-bottom .link p {
         width: calc(60% / 6);
     }
