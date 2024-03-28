@@ -140,6 +140,10 @@ footer > div.flex {
     height: 100%;
 }
 
+.footer-center {
+    width: 35%;
+}
+
 .footer-left,
 .footer-right {
     width: 30%;
