@@ -13,15 +13,16 @@
 
     <!-- Nav Bar sulla sinistra e contenuto della pagina sulla destra diviso in content top e bottom il tutto gestito con flex -->
     <main class="flex">
-        <section>
+        <section class="nav-bar">
             <nav class="flex f-column jc-between">
                 <div>
                     <div class="ta-center">
                         <a href="#">
-                            <img src="./img/logo-small.svg" alt="">
+                            <img src="./img/logo-small.svg" alt="" class="d-none-responsive" id="logo-small">
+                            <img src="./img/logo.svg" alt="" class="d-none" id="logo">
                         </a>
                     </div>
-                    <div class="ta-center">
+                    <div class="ta-center hover">
                         <a href="#">
                             <img src="./img/home.svg" alt="">
                             <span class="d-none">Home</span>
@@ -42,7 +43,7 @@
                     <div class="playlist d-none">
                         <h4>Playlist</h4>
                         <div>
-                            <i class="fa-regular fa-square-plus"></i>
+                            <i class="fa-regular fa-square-plus fa-2xl"></i>
                             <span class="d-none">Crea Playlist</span>
                         </div>
                         <p>Nome Playlist</p>
@@ -60,7 +61,7 @@
                             <span class="d-none">Installa app</span>
                         </a>
                     </div>
-                    <div class="ta-center">
+                    <div class="ta-center brd-top">
                         <a href="#">
                             <img src="./img/profile.svg" alt="">
                             <span class="d-none">Giuseppe De Rosa</span>

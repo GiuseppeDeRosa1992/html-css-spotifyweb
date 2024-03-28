@@ -142,6 +142,7 @@ footer > div.flex {
 
 .footer-center {
     width: 35%;
+    text-align: center;
 }
 
 .footer-left,
@@ -172,4 +173,67 @@ footer .footer-center .footer-center-top {
     display: inline-block;
     width: 25%;
     vertical-align: middle;
+}
+
+/**************** CSS RESPONSIVE S(639x1095) ***************/
+@media all and (min-width: 639px) {
+    section.nav-bar {
+        width: 200%;
+    }
+
+    .d-none {
+        display: inline-block;
+    }
+
+    .d-none-responsive {
+        display: none;
+    }
+
+    nav * {
+        color: gray;
+    }
+
+    nav {
+        padding: 0.5rem 1.5rem;
+    }
+
+    nav .hover:hover {
+        border-left: 1px solid yellowgreen;
+    }
+
+    nav #logo {
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    nav img {
+        width: 20%;
+        vertical-align: middle;
+        padding: 0.5rem 0;
+    }
+
+    nav .ta-center {
+        text-align: left;
+    }
+
+    .content-bottom .link p {
+        width: calc(100% / 3);
+    }
+
+    .brd-top {
+        border-top: 1px solid gray;
+        margin-right: 5px;
+    }
+
+    .playlist * {
+        padding: 0.5rem 0;
+    }
+
+    footer {
+        background-color: #282828;
+    }
+
+    .footer-right hr {
+        width: 35%;
+    }
 }
