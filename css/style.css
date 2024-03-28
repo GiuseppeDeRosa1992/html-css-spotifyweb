@@ -123,7 +123,7 @@ main .content-bottom {
 
 .title-created,
 .title-artist {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .content-bottom .created {
@@ -285,3 +285,41 @@ footer .footer-center .footer-center-top {
     }
 }
 /**************** FINE CSS RESPONSIVE md(878x1095) ***************/
+
+/**************** CSS RESPONSIVE lg(1440x1100) ***************/
+
+@media all and (min-width: 1440px) and (min-height: 1100px) {
+    section.nav-bar {
+        width: 25%;
+    }
+
+    .content-bottom .link p {
+        width: calc(60% / 6);
+    }
+
+    .content-bottom .card {
+        width: calc(100% / 6 - 0.5rem);
+    }
+
+    div.created.flex {
+        width: 30%;
+    }
+
+    div.artist.flex {
+        width: 30%;
+    }
+
+    footer .footer-right {
+        text-align: end;
+    }
+
+    .footer-center {
+        width: 45%;
+    }
+    
+    .footer-left,
+    .footer-right {
+        width: 25%;
+    }
+}
+/**************** FINE CSS RESPONSIVE lg(1440x1100) ***************/
