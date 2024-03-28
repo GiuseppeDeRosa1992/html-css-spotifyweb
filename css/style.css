@@ -11,17 +11,6 @@ body {
 }
 
 /******************* CSS UTILI *****************/
-.debug,
-.debug main,
-.debug nav,
-.debug nav div,
-.debug .content,
-.debug .bg-blue,
-.debug .content-bottom,
-.debug footer {
-    border: 2px dashed yellowgreen;
-}
-
 img {
     width: 100%;
     height: 100%;
@@ -113,10 +102,14 @@ main .content-bottom {
 }
 
 .content-bottom .link p {
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     width: calc(100% / 4);
     font-size: 0.7rem;
     color: gray;
+}
+
+.content-bottom .link p:hover {
+    border-bottom: 2px solid yellowgreen;
 }
 
 .content-bottom .card {
@@ -154,8 +147,25 @@ footer > div.flex {
 
 .footer-left img {
     width: 40px;
+    margin-right: 0.5rem;
 }
 
 footer i {
     padding: 0 0.5rem;
+}
+
+footer .footer-center .footer-center-top {
+    padding-bottom: 1.5rem;
+}
+
+.footer-center-bottom hr {
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-right hr {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
 }
