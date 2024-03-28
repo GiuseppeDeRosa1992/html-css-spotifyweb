@@ -112,13 +112,23 @@ main .content-bottom {
     border-bottom: 2px solid yellowgreen;
 }
 
+.content-bottom > div.jc-between {
+    padding: 1rem 0;
+}
+
 .content-bottom .card {
     width: calc(100% / 2 - 0.5rem);
     padding: 0.5rem 0;
 }
 
+.title-created,
+.title-artist {
+    padding: 2rem 0;
+}
+
 .content-bottom .created {
     padding: 1rem 0;
+    width: 50%;
 }
 
 .content-bottom .artist {
@@ -133,7 +143,7 @@ footer {
     height: 10vh;
     background-color: gray;
     position: sticky;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 footer > div.flex {
@@ -194,7 +204,7 @@ footer .footer-center .footer-center-top {
     }
 
     nav {
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1rem;
     }
 
     nav .hover:hover {
@@ -237,3 +247,41 @@ footer .footer-center .footer-center-top {
         width: 35%;
     }
 }
+/**************** FINE CSS RESPONSIVE S(639x1095) ***************/
+
+/**************** CSS RESPONSIVE md(878x1095) ***************/
+
+@media all and (min-width: 878px) {
+    section.nav-bar {
+        width: 85%;
+    }
+
+    nav img {
+        width: 15%;
+    }
+
+    .content-bottom .link p {
+        width: calc(100% / 5);
+    }
+
+    .content-bottom .jc-between {
+        justify-content: unset;
+    }
+
+    .content-bottom .card {
+        width: calc(100% / 4 - 0.5rem);
+    }
+
+    footer .m-left {
+        margin-left: 1rem;
+    }
+
+    .footer-center-bottom hr {
+        width: 75%;
+    }
+
+    .footer-right hr {
+        width: 55%;
+    }
+}
+/**************** FINE CSS RESPONSIVE md(878x1095) ***************/
