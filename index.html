@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify Web</title>
 </head>
-<body class="debug">
+<body>
     <header>
     </header>
 
     <!-- Nav Bar sulla sinistra e contenuto della pagina sulla destra diviso in content top e bottom il tutto gestito con flex -->
     <main class="flex">
         <section class="nav-bar">
-            <nav class="flex f-column jc-between">
-                <div>
-                    <div class="ta-center">
-                        <a href="#">
-                            <img src="./img/logo-small.svg" alt="" class="d-none-responsive" id="logo-small">
-                            <img src="./img/logo.svg" alt="" class="d-none" id="logo">
-                        </a>
-                    </div>
+            <nav class="flex f-column">
+                <section class="logo-spotify ta-center">
+                    <a href="#">
+                        <img src="./img/logo-small.svg" alt="" class="d-none-responsive" id="logo-small">
+                        <img src="./img/logo.svg" alt="" class="d-none" id="logo">
+                    </a>
+                </section>
+                <section class="link-navbar f-grow">
                     <div class="ta-center hover">
                         <a href="#">
                             <img src="./img/home.svg" alt="">
@@ -40,42 +40,53 @@
                             <span class="d-none">La tua Libreria</span>
                         </a>
                     </div>
-                    <div class="playlist d-none">
-                        <h4 class="hover">Playlist</h4>
-                        <div class="hover">
-                            <i class="fa-regular fa-square-plus fa-2xl"></i>
-                            <span class="d-none">Crea Playlist</span>
-                        </div>
-                        <p class="hover">Nome Playlist</p>
-                        <p class="hover">Nome Playlist</p>
-                        <p class="hover">Nome Playlist</p>
-                        <p class="hover">Nome Playlist</p>
-                        <p class="hover">Nome Playlist</p>
-                        <p class="hover">Nome Playlist</p>
+                </section>
+                <section class="playlist d-none f-grow">
+                    <h4 class="hover">Playlist</h4>
+                    <div class="hover">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="d-none">Crea Playlist</span>
                     </div>
-                </div>
-                <div>
-                    <div class="ta-center hover">
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                    <p class="hover">Nome Playlist</p>
+                </section>
+                <section class="link-app-profile">
+                    <div class="app ta-center hover">
                         <a href="#">
                             <img src="./img/download.svg" alt="">
                             <span class="d-none">Installa app</span>
                         </a>
                     </div>
-                    <div class="ta-center brd-top hover">
+                    <div class="profile ta-center brd-top hover">
                         <a href="#">
                             <img src="./img/profile.svg" alt="">
                             <span class="d-none">Giuseppe De Rosa</span>
                         </a>
                     </div>
-                </div>
+                </section>
             </nav>
         </section>
         <!-- Sezione Content con dentro content-top dove troviamo un button e content bottom dove ci sono tutte le card -->
         <section class="content">
-            <div class="content-top bg-blue ta-right">
-                <a href="#">EFFETTUA L'UPGRADE</a>
-            </div>
-            <div class="content-bottom">
+            <section class="content-top bg-blue ta-right">
+                <a href="#" class="t-2">EFFETTUA L'UPGRADE</a>
+            </section>
+            <section class="content-bottom">
                 <div class="link flex jc-center f-wrap ta-center">
                     <p>IN EVIDENZA</p>
                     <p>PODCAST</p>
@@ -163,7 +174,7 @@
                         <img src="./img/einaudi.jpeg" alt="">
                     </figure>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
     <!-- Footer della pagina con un altezza in vh e delle icone dentro -->
@@ -173,8 +184,8 @@
                 <figure>
                     <img src="./img/sinister.jpeg" alt="">
                 </figure>
-                <div>
-                    <h5>Sinister</h5>
+                <div class="name-group">
+                    <h4>Sinister</h4>
                     <p>Brano Nome</p>
                 </div>
                 <div class="m-left">
@@ -182,11 +193,11 @@
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
-            <div class="footer-center">
+            <div class="footer-center f-grow">
                 <div class="footer-center-top">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play fa-2xl"></i>
+                    <i class="fa-regular fa-circle-play"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>

@@ -21,6 +21,10 @@ img {
     display: flex;
 }
 
+.f-grow {
+    flex-grow: 1;
+}
+
 .f-column {
     flex-direction: column;
 }
@@ -67,7 +71,7 @@ a {
 
 
 main nav {
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 90px);
     background-color: black;
 }
 
@@ -76,23 +80,24 @@ nav img {
     text-align: center;
 }
 
+section.playlist,
+section.link-app-profile {
+    overflow: auto;
+}
+
 nav .hover:hover {
     border-left: 1px solid yellowgreen;
 }
 
-main .content {
-    height: calc(100vh - 10vh);
-}
-
 main .content-top {
-    height: 10vh;
+    height: 90px;
     background-color: #080B12;
 }
 
 main .content-bottom {
     background-color: #141922;
     padding: 1rem;
-    height: 80vh;
+    height: calc(100vh - 180px);
     overflow: auto;
 }
 
@@ -101,7 +106,7 @@ main .content-bottom {
     background-color: #080B12;
     border: 1px solid white;
     border-radius: 20px;
-    line-height: 10vh;
+    line-height: 90px;
     margin-right: 0.5rem;
 }
 
@@ -143,9 +148,10 @@ main .content-bottom {
 .content-bottom .artist img {
     border-radius: 50%;
 }
+
 /********************* CSS FOOTER *******************/
 footer {
-    height: 10vh;
+    height: 90px;
     background-color: gray;
     position: sticky;
     padding: 0.5rem;
@@ -205,12 +211,11 @@ footer .footer-center .footer-center-top {
     }
 
     nav {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem;
     }
 
     nav #logo {
         width: 100%;
-        padding-right: 2rem;
     }
 
     nav img {
@@ -221,6 +226,14 @@ footer .footer-center .footer-center-top {
 
     nav .ta-center {
         text-align: left;
+    }
+
+    nav .link-navbar {
+        flex-grow: 0;
+    }
+
+    .ta-center span {
+        font-size: 0.6rem;
     }
 
     .content-bottom .link p {
@@ -234,6 +247,7 @@ footer .footer-center .footer-center-top {
 
     .playlist * {
         padding: 0.5rem 0;
+        font-size: 0.8rem; 
     }
 
     footer {
