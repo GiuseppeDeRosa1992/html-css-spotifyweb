@@ -13,7 +13,6 @@ body {
 /******************* CSS UTILI *****************/
 img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -73,6 +72,7 @@ a {
 main nav {
     height: calc(100vh - 90px);
     background-color: black;
+    padding: 0.5rem;
 }
 
 nav img {
@@ -80,8 +80,7 @@ nav img {
     text-align: center;
 }
 
-section.playlist,
-section.link-app-profile {
+section.playlist {
     overflow: auto;
 }
 
@@ -149,12 +148,15 @@ main .content-bottom {
     border-radius: 50%;
 }
 
+img:hover {
+    opacity: 0.3;
+}
 /********************* CSS FOOTER *******************/
 footer {
     height: 90px;
-    background-color: gray;
+    background-color: #080B12;;
     position: sticky;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 footer > div.flex {
@@ -162,13 +164,12 @@ footer > div.flex {
 }
 
 .footer-center {
-    width: 35%;
     text-align: center;
 }
 
 .footer-left,
 .footer-right {
-    width: 30%;
+    width: 26%;
 }
 
 .footer-left img {
@@ -176,25 +177,23 @@ footer > div.flex {
     margin-right: 0.5rem;
 }
 
-footer i {
+footer .footer-center i,
+footer .footer-left i {
     padding: 0 0.5rem;
 }
 
 footer .footer-center .footer-center-top {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
-.footer-center-bottom hr {
-    width: 60%;
-    display: inline-block;
-    vertical-align: middle;
+#bar-progress,
+.vol-progress {
+    width: 50%;
 }
 
-.footer-right hr {
-    display: inline-block;
-    width: 25%;
-    vertical-align: middle;
-}
+footer .footer-right {
+        text-align: end;
+    }
 
 /**************** CSS RESPONSIVE S(639x1095) ***************/
 @media all and (min-width: 639px) {
@@ -253,10 +252,6 @@ footer .footer-center .footer-center-top {
     footer {
         background-color: #282828;
     }
-
-    .footer-right hr {
-        width: 35%;
-    }
 }
 /**************** FINE CSS RESPONSIVE S(639x1095) ***************/
 
@@ -286,10 +281,6 @@ footer .footer-center .footer-center-top {
     .footer-center-bottom hr {
         width: 75%;
     }
-
-    .footer-right hr {
-        width: 55%;
-    }
 }
 /**************** FINE CSS RESPONSIVE md(878x1095) ***************/
 
@@ -310,19 +301,6 @@ footer .footer-center .footer-center-top {
 
     div.artist.flex {
         width: 30%;
-    }
-
-    footer .footer-right {
-        text-align: end;
-    }
-
-    .footer-center {
-        width: 45%;
-    }
-    
-    .footer-left,
-    .footer-right {
-        width: 25%;
     }
 }
 /**************** FINE CSS RESPONSIVE lg(1440x1100) ***************/
