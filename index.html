@@ -44,7 +44,7 @@
                 <section class="playlist d-none f-grow">
                     <h4 class="hover">Playlist</h4>
                     <div class="hover">
-                        <i class="fa-regular fa-square-plus fa-2xl"></i>
+                        <i class="fa-regular fa-square-plus fa-xl"></i>
                         <span class="d-none">Crea Playlist</span>
                     </div>
                     <p class="hover">Nome Playlist</p>
@@ -66,13 +66,13 @@
                     <p class="hover">Nome Playlist</p>
                 </section>
                 <section class="link-app-profile">
-                    <div class="app ta-center hover">
+                    <div class="app ta-center">
                         <a href="#">
                             <img src="./img/download.svg" alt="">
                             <span class="d-none">Installa app</span>
                         </a>
                     </div>
-                    <div class="profile ta-center brd-top hover">
+                    <div class="profile ta-center brd-top">
                         <a href="#">
                             <img src="./img/profile.svg" alt="">
                             <span class="d-none">Giuseppe De Rosa</span>
@@ -202,8 +202,13 @@
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
                 <div class="footer-center-bottom f-grow">
+                    <!-- ALTRA SOLUZIONE PER BAR PROGRESS
+                        <label for="bar-progress">0:25</label>
+                        <progress id="bar-progress" value="40" max="100"> 40% </progress>
+                        <label for="bar-progress">4:35</label>
+                    -->
                     <label for="bar-progress">0:25</label>
-                    <progress id="bar-progress" value="40" max="100"> 40% </progress>
+                    <input type="range" id="bar-progress" name="vol" min="0" max="100">
                     <label for="bar-progress">4:35</label>
                 </div>
             </div>
@@ -211,7 +216,11 @@
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
-                <progress class="vol-progress" value="20" max="100"> 20% </progress>
+                <!-- ALTRA SOLUZIONE PER VOLUME PROGRESS
+                    <progress id="vol-progress" value="20" max="100"> 20% </progress>
+                -->
+                <label for="vol-progress"></label>
+                <input type="range" id="vol-progress" name="vol" min="0" max="100">
             </div>
         </div>
     </footer>

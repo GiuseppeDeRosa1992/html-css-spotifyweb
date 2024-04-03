@@ -16,6 +16,14 @@ img {
     object-fit: cover;
 }
 
+img:hover {
+    opacity: 0.3;
+}
+
+figure {
+    position: relative;
+}
+
 .flex {
     display: flex;
 }
@@ -68,7 +76,7 @@ a {
 
 /********************** CSS MAIN ******************/
 
-
+/********************** CSS MAIN NAV ***************/
 main nav {
     height: calc(100vh - 90px);
     background-color: black;
@@ -84,29 +92,50 @@ section.playlist {
     overflow: auto;
 }
 
-nav .hover:hover {
-    border-left: 1px solid yellowgreen;
+section.playlist p,
+section.playlist span {
+    font-size: 0.5rem;
 }
 
+nav .hover:hover {
+    border-left: 1px solid yellowgreen;
+    padding-left: 0.5rem;
+}
+
+nav *:hover {
+    color: white;
+}
+/********************* FINE CSS MAIN NAV ***************/
+
+/********************** CSS MAIN CONTENT-TOP ***************/
 main .content-top {
     height: 90px;
     background-color: #080B12;
+    padding-top: 1.6rem;
 }
 
+.content-top a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #080B12;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.content-top a:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+/********************** FINE CSS MAIN CONTENT-TOP ***************/
+
+/********************** CSS MAIN CONTENT-BOTTOM ***************/
 main .content-bottom {
     background-color: #141922;
     padding: 1rem;
     height: calc(100vh - 180px);
     overflow: auto;
-}
-
-.content-top a {
-    padding: 0.5rem 1.5rem;
-    background-color: #080B12;
-    border: 1px solid white;
-    border-radius: 20px;
-    line-height: 90px;
-    margin-right: 0.5rem;
 }
 
 .content-bottom .link p {
@@ -116,9 +145,31 @@ main .content-bottom {
     color: gray;
 }
 
+.content-bottom .link p:hover:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: yellowgreen;
+    display: block;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+}
+
 .content-bottom .link p:hover {
-    border-bottom: 2px solid yellowgreen;
     color: white;
+}
+
+.content-bottom figure:hover:after {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 2rem;
+    content: "\f144";
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 .content-bottom > div.jc-between {
@@ -147,10 +198,8 @@ main .content-bottom {
 .content-bottom .artist img {
     border-radius: 50%;
 }
+/********************** FINE CSS MAIN CONTENT-BOTTOM ***************/
 
-img:hover {
-    opacity: 0.3;
-}
 /********************* CSS FOOTER *******************/
 footer {
     height: 90px;
@@ -187,13 +236,14 @@ footer .footer-center .footer-center-top {
 }
 
 #bar-progress,
-.vol-progress {
-    width: 50%;
+#vol-progress {
+    width: 35%;
 }
 
 footer .footer-right {
         text-align: end;
-    }
+}
+/***************** FINE CSS FOOTER *******************/
 
 /**************** CSS RESPONSIVE S(639x1095) ***************/
 @media all and (min-width: 639px) {
@@ -281,6 +331,11 @@ footer .footer-right {
     .footer-center-bottom hr {
         width: 75%;
     }
+
+    section.playlist p,
+    section.playlist span {
+    font-size: 0.8rem;
+    }
 }
 /**************** FINE CSS RESPONSIVE md(878x1095) ***************/
 
@@ -304,3 +359,10 @@ footer .footer-right {
     }
 }
 /**************** FINE CSS RESPONSIVE lg(1440x1100) ***************/
+
+/**************** CSS RESPONSIVE HEIGHT 300px IN GIU' ********************/
+@media all and (max-height: 300px) {
+    section.link-app-profile {
+        display: none;
+    }
+}
